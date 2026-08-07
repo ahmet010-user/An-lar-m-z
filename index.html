@@ -1,328 +1,404 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bizim Hikâyemiz ❤️</title>
+<title>Bizim Dünyamız ❤️</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #25002f, #4b145b);
-            color: white;
-            min-height: 100vh;
-            padding: 25px 15px;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #25002f, #5b176b);
+    color: white;
+    padding: 20px;
+}
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
+.container {
+    max-width: 800px;
+    margin: auto;
+}
 
-        h1 {
-            text-align: center;
-            font-size: 38px;
-            margin: 25px 0 10px;
-        }
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 25px;
+}
 
-        .subtitle {
-            text-align: center;
-            color: #ff9fca;
-            font-size: 21px;
-            font-weight: bold;
-            margin-bottom: 35px;
-        }
+.subtitle {
+    text-align: center;
+    color: #ff9fca;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
 
-        .card {
-            background: rgba(255,255,255,0.10);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 25px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
 
-        .card h2 {
-            color: #ff9fca;
-            margin-bottom: 18px;
-            font-size: 25px;
-        }
+h2 {
+    color: #ff9fca;
+    margin-bottom: 18px;
+}
 
-        .card p {
-            font-size: 18px;
-            line-height: 1.8;
-        }
+input,
+textarea,
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
 
-        .names {
-            text-align: center;
-            line-height: 2;
-            font-size: 19px;
-        }
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
 
-        /* FOTOĞRAFLAR */
+button {
+    background: #ff6fae;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
+button:active {
+    transform: scale(0.98);
+}
 
-        .gallery img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 18px;
-            border: 2px solid rgba(255,255,255,0.2);
-        }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
 
-        /* SES */
+.photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+}
 
-        .audio-box {
-            background: rgba(0,0,0,0.15);
-            padding: 15px;
-            border-radius: 18px;
-            margin-bottom: 15px;
-        }
+.audio-item {
+    background: rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
 
-        .audio-box p {
-            margin-bottom: 8px;
-            color: #ffb6d7;
-            font-weight: bold;
-        }
+audio {
+    width: 100%;
+}
 
-        audio {
-            width: 100%;
-        }
+.memory {
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 18px;
+    margin-top: 15px;
+}
 
-        /* ANILAR */
+.memory h3 {
+    color: #ff9fca;
+}
 
-        .memory {
-            background: rgba(255,255,255,0.07);
-            border-radius: 18px;
-            padding: 18px;
-            margin-bottom: 15px;
-        }
+.delete {
+    background: #8d315d;
+    margin-top: 10px;
+}
 
-        .memory h3 {
-            color: #ff9fca;
-            margin-bottom: 8px;
-        }
+.love {
+    text-align: center;
+    color: #ff9fca;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 45px 0;
+}
 
-        .love {
-            text-align: center;
-            font-size: 32px;
-            font-weight: bold;
-            color: #ff9fca;
-            margin: 45px 0 20px;
-        }
-
-        .footer {
-            text-align: center;
-            margin: 35px 0;
-            opacity: 0.8;
-        }
-
-        @media (max-width: 500px) {
-
-            h1 {
-                font-size: 30px;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery img {
-                height: 250px;
-            }
-        }
-    </style>
+@media(max-width:500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>💌 Bizim Hikâyemiz</h1>
+<h1>💌 Bizim Hikâyemiz</h1>
 
-    <div class="subtitle">
-        I love you forever ❤️
-    </div>
+<div class="subtitle">
+I love you forever ❤️
+</div>
 
 
-    <!-- TANIŞMA GÜNÜ -->
+<!-- TANIŞMA -->
 
-    <div class="card">
+<div class="card">
 
-        <h2>📅 Tanıştığımız Gün</h2>
+<h2>📅 Tanıştığımız Gün</h2>
 
-        <p>
-            <b>13 Haziran 2025 ❤️</b>
-        </p>
+<p>
+<b>13 Haziran 2025 ❤️</b>
+</p>
 
-        <p>
-            Hikâyemizin başladığı güzel gün...
-        </p>
-
-    </div>
-
-
-    <!-- LAKAPLAR -->
-
-    <div class="card">
-
-        <h2>💕 Bana Söylediğin Lakaplar</h2>
-
-        <p class="names">
-            Aşkım<br>
-            Bebeğim<br>
-            Bücürüm<br>
-            Bitanem<br>
-            Oğluşum<br>
-            Kedim ❤️
-        </p>
-
-    </div>
-
-
-    <div class="card">
-
-        <h2>💗 Sana Söylediğim Lakaplar</h2>
-
-        <p class="names">
-            Aşkım<br>
-            Canım<br>
-            Hayatım<br>
-            Anneciğim ❤️
-        </p>
-
-    </div>
-
-
-    <!-- FOTOĞRAFLAR -->
-
-    <div class="card">
-
-        <h2>📸 Fotoğraflarımız</h2>
-
-        <div class="gallery">
-
-            <!-- Fotoğraf dosyalarının isimlerini buraya yaz -->
-
-            <img src="foto1.jpg" alt="Bizim fotoğrafımız">
-
-            <img src="foto2.jpg" alt="Bizim fotoğrafımız">
-
-            <img src="foto3.jpg" alt="Bizim fotoğrafımız">
-
-            <img src="foto4.jpg" alt="Bizim fotoğrafımız">
-
-        </div>
-
-    </div>
-
-
-    <!-- SES KAYITLARI -->
-
-    <div class="card">
-
-        <h2>🎧 Ses Kayıtlarımız</h2>
-
-
-        <div class="audio-box">
-
-            <p>❤️ Ses kaydımız 1</p>
-
-            <audio controls>
-                <source src="ses1.mp3" type="audio/mpeg">
-            </audio>
-
-        </div>
-
-
-        <div class="audio-box">
-
-            <p>💕 Ses kaydımız 2</p>
-
-            <audio controls>
-                <source src="ses2.mp3" type="audio/mpeg">
-            </audio>
-
-        </div>
-
-
-        <div class="audio-box">
-
-            <p>💗 Ses kaydımız 3</p>
-
-            <audio controls>
-                <source src="ses3.mp3" type="audio/mpeg">
-            </audio>
-
-        </div>
-
-    </div>
-
-
-    <!-- ANILAR -->
-
-    <div class="card">
-
-        <h2>🌹 Anılarımız</h2>
-
-
-        <div class="memory">
-
-            <h3>❤️ İlk güzel anımız</h3>
-
-            <p>
-                Buraya birlikte yaşadığınız ilk güzel anıyı yazabilirsin.
-            </p>
-
-        </div>
-
-
-        <div class="memory">
-
-            <h3>💕 Unutamadığım an</h3>
-
-            <p>
-                Buraya unutamadığın bir anınızı yazabilirsin.
-            </p>
-
-        </div>
-
-
-        <div class="memory">
-
-            <h3>💗 Gelecekteki anılarımız</h3>
-
-            <p>
-                Daha yaşayacağımız çok güzel anı var...
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="love">
-        I love you forever ❤️
-    </div>
-
-
-    <div class="footer">
-        Sadece bizim anılarımızdan oluşan küçük bir dünya. ❤️
-    </div>
+<p>
+Hikâyemizin başladığı güzel gün...
+</p>
 
 </div>
+
+
+<!-- FOTOĞRAFLAR -->
+
+<div class="card">
+
+<h2>📸 Fotoğraflarımız</h2>
+
+<p>
+Telefonundan fotoğraf seç ve anında burada gör.
+</p>
+
+<input
+type="file"
+id="photoInput"
+accept="image/*"
+multiple
+>
+
+<div id="gallery" class="gallery"></div>
+
+</div>
+
+
+<!-- SESLER -->
+
+<div class="card">
+
+<h2>🎧 Ses Kayıtlarımız</h2>
+
+<p>
+Ses kaydı seç ve burada dinle.
+</p>
+
+<input
+type="file"
+id="audioInput"
+accept="audio/*"
+multiple
+>
+
+<div id="audioList"></div>
+
+</div>
+
+
+<!-- ANILAR -->
+
+<div class="card">
+
+<h2>🌹 Anılarımız</h2>
+
+<input
+type="text"
+id="memoryTitle"
+placeholder="Anının başlığı"
+>
+
+<textarea
+id="memoryText"
+placeholder="Buraya anınızı yazın..."
+></textarea>
+
+<button onclick="addMemory()">
+❤️ Anıyı Kaydet
+</button>
+
+<div id="memoryList"></div>
+
+</div>
+
+
+<div class="love">
+I love you forever ❤️
+</div>
+
+</div>
+
+
+<script>
+
+/* FOTOĞRAFLAR */
+
+const photoInput = document.getElementById("photoInput");
+const gallery = document.getElementById("gallery");
+
+photoInput.addEventListener("change", function() {
+
+    gallery.innerHTML = "";
+
+    Array.from(this.files).forEach(file => {
+
+        const image = document.createElement("img");
+
+        image.className = "photo";
+
+        image.src = URL.createObjectURL(file);
+
+        gallery.appendChild(image);
+
+    });
+
+});
+
+
+/* SESLER */
+
+const audioInput = document.getElementById("audioInput");
+const audioList = document.getElementById("audioList");
+
+audioInput.addEventListener("change", function() {
+
+    audioList.innerHTML = "";
+
+    Array.from(this.files).forEach((file, index) => {
+
+        const box = document.createElement("div");
+
+        box.className = "audio-item";
+
+        const title = document.createElement("p");
+
+        title.textContent = "🎙️ Ses kaydı " + (index + 1);
+
+        const audio = document.createElement("audio");
+
+        audio.controls = true;
+
+        audio.src = URL.createObjectURL(file);
+
+        box.appendChild(title);
+
+        box.appendChild(audio);
+
+        audioList.appendChild(box);
+
+    });
+
+});
+
+
+/* ANILAR */
+
+function loadMemories() {
+
+    const memories =
+        JSON.parse(localStorage.getItem("bizimAnilarimiz")) || [];
+
+    const list = document.getElementById("memoryList");
+
+    list.innerHTML = "";
+
+    memories.forEach((memory, index) => {
+
+        const box = document.createElement("div");
+
+        box.className = "memory";
+
+        box.innerHTML = `
+            <h3>❤️ ${escapeHTML(memory.title)}</h3>
+            <p>${escapeHTML(memory.text)}</p>
+            <button class="delete" onclick="deleteMemory(${index})">
+                🗑️ Bu anıyı sil
+            </button>
+        `;
+
+        list.appendChild(box);
+
+    });
+}
+
+
+function addMemory() {
+
+    const title =
+        document.getElementById("memoryTitle").value.trim();
+
+    const text =
+        document.getElementById("memoryText").value.trim();
+
+    if (!title || !text) {
+
+        alert("Lütfen başlık ve anı yaz.");
+
+        return;
+    }
+
+    const memories =
+        JSON.parse(localStorage.getItem("bizimAnilarimiz")) || [];
+
+    memories.push({
+        title: title,
+        text: text
+    });
+
+    localStorage.setItem(
+        "bizimAnilarimiz",
+        JSON.stringify(memories)
+    );
+
+    document.getElementById("memoryTitle").value = "";
+
+    document.getElementById("memoryText").value = "";
+
+    loadMemories();
+}
+
+
+function deleteMemory(index) {
+
+    const memories =
+        JSON.parse(localStorage.getItem("bizimAnilarimiz")) || [];
+
+    memories.splice(index, 1);
+
+    localStorage.setItem(
+        "bizimAnilarimiz",
+        JSON.stringify(memories)
+    );
+
+    loadMemories();
+}
+
+
+function escapeHTML(text) {
+
+    return text
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+
+loadMemories();
+
+</script>
 
 </body>
 </html>
