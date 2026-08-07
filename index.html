@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Bizim Hikâyemiz ❤️</title>
 
     <style>
@@ -15,180 +14,129 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #160b20, #30133d, #160b20);
+            background: linear-gradient(135deg, #25002f, #4b145b);
             color: white;
             min-height: 100vh;
+            padding: 30px 20px;
         }
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .heart {
-            font-size: 70px;
-            animation: heartbeat 1.5s infinite;
-        }
-
-        h1 {
-            font-size: 42px;
-            margin: 20px 0 10px;
-        }
-
-        .subtitle {
-            color: #e8c9ed;
-            font-size: 18px;
-            max-width: 500px;
-            line-height: 1.6;
-        }
-
-        .button {
-            margin-top: 30px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 30px;
-            background: #ff4f91;
-            color: white;
-            font-size: 17px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .button:hover {
-            transform: scale(1.05);
-        }
-
-        .section {
-            padding: 70px 25px;
-            max-width: 900px;
+        .container {
+            max-width: 700px;
             margin: auto;
         }
 
-        .section h2 {
+        h1 {
             text-align: center;
-            font-size: 30px;
-            margin-bottom: 30px;
+            font-size: 38px;
+            margin: 30px 0 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 40px;
+            color: #ff9fca;
+            font-weight: bold;
         }
 
         .card {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: 20px;
-            padding: 25px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 25px;
+            padding: 28px;
+            margin-bottom: 25px;
         }
 
-        .card h3 {
-            margin-bottom: 10px;
-            color: #ff9fc2;
+        .card h2 {
+            color: #ff9fca;
+            margin-bottom: 15px;
         }
 
         .card p {
-            line-height: 1.7;
-            color: #eadfea;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .names {
+            text-align: center;
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        .love {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff9fca;
+            margin: 45px 0 20px;
         }
 
         .footer {
             text-align: center;
-            padding: 40px;
-            color: #c9b5ce;
-        }
-
-        @keyframes heartbeat {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
+            margin-top: 40px;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
 
-    <section class="hero">
-        <div class="heart">❤️</div>
+<div class="container">
 
-        <h1>Bizim Hikâyemiz</h1>
+    <h1>💌 Bizim Hikâyemiz</h1>
 
-        <p class="subtitle">
-            Uzakta olsak bile, birlikte biriktirdiğimiz bütün güzel anılar
-            burada.
+    <div class="subtitle">
+        I love you forever ❤️
+    </div>
+
+    <div class="card">
+        <h2>📅 Tanıştığımız Gün</h2>
+        <p>
+            13 Haziran 2025 ❤️
         </p>
+        <p>
+            Hikâyemizin başladığı güzel gün...
+        </p>
+    </div>
 
-        <a href="#hikayemiz" class="button">
-            Hikâyemize Başla
-        </a>
-    </section>
+    <div class="card">
+        <h2>💕 Bana Söylediğin Lakaplar</h2>
+        <p class="names">
+            Aşkım<br>
+            Bebeğim<br>
+            Bücürüm<br>
+            Bitanem<br>
+            Oğluşum<br>
+            Kedim ❤️
+        </p>
+    </div>
 
+    <div class="card">
+        <h2>💗 Sana Söylediğim Lakaplar</h2>
+        <p class="names">
+            Aşkım<br>
+            Canım<br>
+            Hayatım<br>
+            Anneciğim ❤️
+        </p>
+    </div>
 
-    <section class="section" id="hikayemiz">
+    <div class="card">
+        <h2>🌹 İlk Güzel Anımız</h2>
+        <p>
+            Buraya birlikte yaşadığımız güzel anımızı yazacağız.
+        </p>
+    </div>
 
-        <h2>💌 Bizim Hikâyemiz</h2>
-
-        <div class="card">
-            <h3>İlk Tanıştığımız Gün</h3>
-            <p>
-                Buraya ilk tanıştığınız günü ve o gün hakkında
-                yazmak istediğin şeyi yazacağız.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>İlk Güzel Anımız</h3>
-            <p>
-                Buraya birlikte yaşadığınız güzel bir anıyı yazacağız.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Sana Söylemek İstediklerim ❤️</h3>
-            <p>
-                Buraya tamamen ona özel hazırlayacağımız mesajı
-                ekleyeceğiz.
-            </p>
-        </div>
-
-    </section>
-
-
-    <section class="section">
-
-        <h2>📸 Anılarımız</h2>
-
-        <div class="card">
-            <p>
-                Birazdan buraya fotoğraflarınızı ekleyebileceğimiz
-                güzel bir galeri yapacağız.
-            </p>
-        </div>
-
-    </section>
-
-
-    <section class="section">
-
-        <h2>🎙️ Ses Kayıtlarımız</h2>
-
-        <div class="card">
-            <p>
-                Buraya birlikte kaydettiğiniz sesleri ekleyeceğiz.
-            </p>
-        </div>
-
-    </section>
-
+    <div class="love">
+        I love you forever ❤️
+    </div>
 
     <div class="footer">
         Sadece bizim anılarımızdan oluşan küçük bir dünya. ❤️
     </div>
+
+</div>
 
 </body>
 </html>
