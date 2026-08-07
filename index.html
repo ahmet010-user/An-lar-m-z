@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Bizim Hikâyemiz ❤️</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,127 +19,348 @@
 }
 
 body {
+
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #25002f, #5b176b);
+
+    background:
+    linear-gradient(
+        135deg,
+        #25002f,
+        #5b176b
+    );
+
     color: white;
+
     min-height: 100vh;
+
     padding: 25px 15px;
+
 }
 
 .container {
+
     max-width: 800px;
+
     margin: auto;
+
 }
 
 h1 {
+
     text-align: center;
+
     font-size: 38px;
+
     margin: 25px 0 10px;
+
 }
 
 .subtitle {
+
     text-align: center;
+
     color: #ff9fca;
+
     font-size: 21px;
+
     font-weight: bold;
+
     margin-bottom: 35px;
+
 }
 
 .card {
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.15);
+
+    background:
+    rgba(255,255,255,0.10);
+
+    border:
+    1px solid
+    rgba(255,255,255,0.15);
+
     border-radius: 25px;
+
     padding: 25px;
+
     margin-bottom: 25px;
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,0,0,0.2);
+
 }
 
 .card h2 {
+
     color: #ff9fca;
+
     margin-bottom: 18px;
+
+    font-size: 25px;
+
 }
 
 .card p {
+
     font-size: 18px;
+
     line-height: 1.8;
+
 }
 
+
+/* FOTOĞRAFLAR */
+
 .gallery {
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
     gap: 12px;
+
 }
 
 .gallery img {
+
     width: 100%;
+
     height: 230px;
+
     object-fit: cover;
+
     border-radius: 18px;
+
+    border:
+    2px solid
+    rgba(255,255,255,0.2);
+
+}
+
+
+/* ANILAR */
+
+.ani-input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+.ani-text {
+
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    resize: vertical;
+
+    font-size: 16px;
+
+    font-family: Arial;
+
+    outline: none;
+
+}
+
+.add-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 12px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #ff6fae;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
 }
 
 .memory {
-    background: rgba(255,255,255,0.07);
-    border-radius: 18px;
+
+    background:
+    rgba(255,255,255,0.08);
+
     padding: 18px;
-    margin-top: 15px;
+
+    border-radius: 18px;
+
+    margin-top: 18px;
+
 }
 
 .memory h3 {
+
     color: #ff9fca;
-    margin-bottom: 8px;
+
+    margin-bottom: 10px;
+
 }
+
+.memory p {
+
+    white-space: pre-wrap;
+
+}
+
+.delete-button {
+
+    margin-top: 12px;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8d315d;
+
+    color: white;
+
+}
+
+
+/* ALT */
 
 .love {
+
     text-align: center;
+
     color: #ff9fca;
+
     font-size: 30px;
+
     font-weight: bold;
-    margin: 45px 0;
+
+    margin: 45px 0 20px;
+
 }
 
-@media (max-width: 500px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+.footer {
+
+    text-align: center;
+
+    opacity: 0.8;
+
+    margin-bottom: 30px;
+
 }
+
+
+@media (max-width: 500px) {
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery img {
+
+        height: 260px;
+
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-<h1>💌 Bizim Hikâyemiz</h1>
+
+<h1>
+💌 Bizim Hikâyemiz
+</h1>
+
 
 <div class="subtitle">
+
 I love you forever ❤️
+
 </div>
+
+
+<!-- TANIŞMA -->
 
 <div class="card">
 
-<h2>📅 Tanıştığımız Gün</h2>
+<h2>
+📅 Tanıştığımız Gün
+</h2>
 
 <p>
-<b>13 Haziran 2025 ❤️</b>
+
+<b>
+13 Haziran 2025 ❤️
+</b>
+
 </p>
 
 <p>
+
 Hikâyemizin başladığı güzel gün...
+
 </p>
 
 </div>
 
 
+<!-- LAKAPLAR -->
+
 <div class="card">
 
-<h2>💕 Bana Söylediğin Lakaplar</h2>
+<h2>
+💕 Bana Söylediğin Lakaplar
+</h2>
 
 <p>
+
 Aşkım<br>
 Bebeğim<br>
 Bücürüm<br>
 Bitanem<br>
 Oğluşum<br>
 Kedim ❤️
+
 </p>
 
 </div>
@@ -142,81 +368,383 @@ Kedim ❤️
 
 <div class="card">
 
-<h2>💗 Sana Söylediğim Lakaplar</h2>
+<h2>
+💗 Sana Söylediğim Lakaplar
+</h2>
 
 <p>
+
 Aşkım<br>
 Canım<br>
 Hayatım<br>
 Anneciğim ❤️
+
 </p>
 
 </div>
 
 
+<!-- FOTOĞRAFLAR -->
+
 <div class="card">
 
-<h2>📸 Fotoğraflarımız</h2>
+<h2>
+📸 Fotoğraflarımız
+</h2>
+
 
 <div class="gallery">
 
-<img src="IMG-20260803-WA0002.jpg" alt="Fotoğrafımız">
 
-<img src="IMG_20260807_201325.jpg" alt="Fotoğrafımız">
+<img
+src="IMG-20260803-WA0002.jpg"
+alt="Fotoğrafımız"
+>
 
-<img src="Screenshot_20260721_133437.jpg" alt="Fotoğrafımız">
 
-<img src="Screenshot_20260721_133455.jpg" alt="Fotoğrafımız">
+<img
+src="IMG_20260807_201325.jpg"
+alt="Fotoğrafımız"
+>
 
-<img src="Screenshot_20260721_133500.jpg" alt="Fotoğrafımız">
+
+<img
+src="Screenshot_20260721_133437.jpg"
+alt="Fotoğrafımız"
+>
+
+
+<img
+src="Screenshot_20260721_133455.jpg"
+alt="Fotoğrafımız"
+>
+
+
+<img
+src="Screenshot_20260721_133500.jpg"
+alt="Fotoğrafımız"
+>
+
 
 </div>
 
 </div>
 
+
+<!-- ANILAR -->
 
 <div class="card">
 
-<h2>🌹 Anılarımız</h2>
 
-<div class="memory">
+<h2>
+🌹 Anılarımız
+</h2>
 
-<h3>❤️ İlk güzel anımız</h3>
 
-<p>
-Buraya birlikte yaşadığımız güzel anımızı yazacağız.
-</p>
+<input
+
+class="ani-input"
+
+id="aniBaslik"
+
+type="text"
+
+placeholder="Anının başlığı ❤️"
+
+>
+
+
+<textarea
+
+class="ani-text"
+
+id="aniMetin"
+
+placeholder="Buraya anınızı yazın..."
+
+></textarea>
+
+
+<button
+
+class="add-button"
+
+onclick="aniEkle()"
+
+>
+
+❤️ Anıyı Ekle
+
+</button>
+
+
+<div id="anilar">
 
 </div>
 
-<div class="memory">
-
-<h3>💕 Unutamadığım an</h3>
-
-<p>
-Buraya unutamadığın güzel bir anınızı yazacağız.
-</p>
-
-</div>
-
-<div class="memory">
-
-<h3>💗 Geleceğimiz</h3>
-
-<p>
-Daha yaşayacağımız çok güzel anı var... ❤️
-</p>
-
-</div>
 
 </div>
 
 
 <div class="love">
+
 I love you forever ❤️
-</div>
 
 </div>
+
+
+<div class="footer">
+
+Sadece bizim anılarımızdan oluşan küçük bir dünya. ❤️
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+/* ANILARI YÜKLE */
+
+function anilariYukle() {
+
+
+    const anilar =
+
+    JSON.parse(
+
+        localStorage.getItem(
+            "bizimAnilarimiz"
+        )
+
+    ) || [];
+
+
+    const alan =
+
+    document.getElementById(
+        "anilar"
+    );
+
+
+    alan.innerHTML = "";
+
+
+    anilar.forEach(
+
+        function(ani, index) {
+
+
+            const kutu =
+
+            document.createElement(
+                "div"
+            );
+
+
+            kutu.className =
+            "memory";
+
+
+            const baslik =
+
+            document.createElement(
+                "h3"
+            );
+
+
+            baslik.textContent =
+
+            "❤️ " +
+            ani.baslik;
+
+
+            const metin =
+
+            document.createElement(
+                "p"
+            );
+
+
+            metin.textContent =
+            ani.metin;
+
+
+            const sil =
+
+            document.createElement(
+                "button"
+            );
+
+
+            sil.className =
+            "delete-button";
+
+
+            sil.textContent =
+            "🗑️ Anıyı Sil";
+
+
+            sil.onclick =
+
+            function() {
+
+
+                anilar.splice(
+                    index,
+                    1
+                );
+
+
+                localStorage.setItem(
+
+                    "bizimAnilarimiz",
+
+                    JSON.stringify(
+                        anilar
+                    )
+
+                );
+
+
+                anilariYukle();
+
+
+            };
+
+
+            kutu.appendChild(
+                baslik
+            );
+
+
+            kutu.appendChild(
+                metin
+            );
+
+
+            kutu.appendChild(
+                sil
+            );
+
+
+            alan.appendChild(
+                kutu
+            );
+
+
+        }
+
+    );
+
+}
+
+
+/* YENİ ANI EKLE */
+
+function aniEkle() {
+
+
+    const baslik =
+
+    document
+    .getElementById(
+        "aniBaslik"
+    )
+    .value
+    .trim();
+
+
+    const metin =
+
+    document
+    .getElementById(
+        "aniMetin"
+    )
+    .value
+    .trim();
+
+
+    if (
+
+        baslik === "" ||
+        metin === ""
+
+    ) {
+
+
+        alert(
+            "Lütfen başlık ve anınızı yazın ❤️"
+        );
+
+
+        return;
+
+    }
+
+
+    const anilar =
+
+    JSON.parse(
+
+        localStorage.getItem(
+            "bizimAnilarimiz"
+        )
+
+    ) || [];
+
+
+    anilar.push({
+
+        baslik:
+        baslik,
+
+        metin:
+        metin
+
+    });
+
+
+    localStorage.setItem(
+
+        "bizimAnilarimiz",
+
+        JSON.stringify(
+            anilar
+        )
+
+    );
+
+
+    document
+    .getElementById(
+        "aniBaslik"
+    )
+    .value = "";
+
+
+    document
+    .getElementById(
+        "aniMetin"
+    )
+    .value = "";
+
+
+    anilariYukle();
+
+}
+
+
+/* SAYFA AÇILINCA ANILARI GÖSTER */
+
+anilariYukle();
+
+
+</script>
+
 
 </body>
+
 </html>
