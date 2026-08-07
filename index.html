@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
 
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bizim Hikâyemiz ❤️</title>
 
@@ -19,279 +16,193 @@ content="width=device-width, initial-scale=1.0">
 }
 
 body {
-
     font-family: Arial, sans-serif;
-
-    background:
-    linear-gradient(
-        135deg,
-        #25002f,
-        #5b176b
-    );
-
+    background: linear-gradient(135deg, #25002f, #5b176b);
     color: white;
-
     min-height: 100vh;
-
     padding: 25px 15px;
-
 }
 
 .container {
-
     max-width: 800px;
-
     margin: auto;
-
 }
 
 h1 {
-
     text-align: center;
-
     font-size: 38px;
-
     margin: 25px 0 10px;
-
 }
 
 .subtitle {
-
     text-align: center;
-
     color: #ff9fca;
-
     font-size: 21px;
-
     font-weight: bold;
-
     margin-bottom: 35px;
-
 }
 
 .card {
-
-    background:
-    rgba(255,255,255,0.10);
-
-    border:
-    1px solid
-    rgba(255,255,255,0.15);
-
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 25px;
-
     padding: 25px;
-
     margin-bottom: 25px;
-
-    box-shadow:
-    0 8px 25px
-    rgba(0,0,0,0.2);
-
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 .card h2 {
-
     color: #ff9fca;
-
     margin-bottom: 18px;
-
     font-size: 25px;
-
 }
 
 .card p {
-
     font-size: 18px;
-
     line-height: 1.8;
-
 }
 
 
 /* FOTOĞRAFLAR */
 
 .gallery {
-
     display: grid;
-
-    grid-template-columns:
-    repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-
 }
 
 .gallery img {
-
     width: 100%;
-
     height: 230px;
-
     object-fit: cover;
-
     border-radius: 18px;
-
-    border:
-    2px solid
-    rgba(255,255,255,0.2);
-
 }
 
 
 /* ANILAR */
 
 .ani-input {
-
     width: 100%;
-
     padding: 14px;
-
     border: none;
-
     border-radius: 12px;
-
     margin-bottom: 12px;
-
     font-size: 16px;
-
-    outline: none;
-
 }
 
 .ani-text {
-
     width: 100%;
-
     min-height: 150px;
-
     padding: 14px;
-
     border: none;
-
     border-radius: 12px;
-
     resize: vertical;
-
     font-size: 16px;
-
     font-family: Arial;
-
-    outline: none;
-
 }
 
-.add-button {
-
+.add-button,
+.record-button {
     width: 100%;
-
     padding: 14px;
-
     margin-top: 12px;
-
     border: none;
-
     border-radius: 12px;
-
     background: #ff6fae;
-
     color: white;
-
     font-size: 17px;
-
     font-weight: bold;
+}
 
+.stop-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #8d315d;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .memory {
-
-    background:
-    rgba(255,255,255,0.08);
-
+    background: rgba(255,255,255,0.08);
     padding: 18px;
-
     border-radius: 18px;
-
     margin-top: 18px;
-
 }
 
 .memory h3 {
-
     color: #ff9fca;
-
     margin-bottom: 10px;
-
 }
 
 .memory p {
-
     white-space: pre-wrap;
-
 }
 
 .delete-button {
-
     margin-top: 12px;
-
     padding: 10px 15px;
-
     border: none;
-
     border-radius: 10px;
-
     background: #8d315d;
-
     color: white;
-
 }
 
 
-/* ALT */
+/* SES KAYITLARI */
+
+.record-status {
+    text-align: center;
+    color: #ffb6d7;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.recording {
+    color: #ff6f91;
+}
+
+.audio-item {
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 18px;
+    margin-top: 18px;
+}
+
+.audio-item audio {
+    width: 100%;
+    margin-top: 10px;
+}
 
 .love {
-
     text-align: center;
-
     color: #ff9fca;
-
     font-size: 30px;
-
     font-weight: bold;
-
     margin: 45px 0 20px;
-
 }
 
 .footer {
-
     text-align: center;
-
     opacity: 0.8;
-
     margin-bottom: 30px;
-
 }
-
 
 @media (max-width: 500px) {
 
     h1 {
-
         font-size: 30px;
-
     }
 
     .gallery {
-
         grid-template-columns: 1fr;
-
     }
 
     .gallery img {
-
         height: 260px;
-
     }
 
 }
@@ -303,19 +214,13 @@ h1 {
 
 <body>
 
-
 <div class="container">
 
 
-<h1>
-💌 Bizim Hikâyemiz
-</h1>
-
+<h1>💌 Bizim Hikâyemiz</h1>
 
 <div class="subtitle">
-
 I love you forever ❤️
-
 </div>
 
 
@@ -323,22 +228,12 @@ I love you forever ❤️
 
 <div class="card">
 
-<h2>
-📅 Tanıştığımız Gün
-</h2>
+<h2>📅 Tanıştığımız Gün</h2>
+
+<p><b>13 Haziran 2025 ❤️</b></p>
 
 <p>
-
-<b>
-13 Haziran 2025 ❤️
-</b>
-
-</p>
-
-<p>
-
 Hikâyemizin başladığı güzel gün...
-
 </p>
 
 </div>
@@ -348,19 +243,15 @@ Hikâyemizin başladığı güzel gün...
 
 <div class="card">
 
-<h2>
-💕 Bana Söylediğin Lakaplar
-</h2>
+<h2>💕 Bana Söylediğin Lakaplar</h2>
 
 <p>
-
 Aşkım<br>
 Bebeğim<br>
 Bücürüm<br>
 Bitanem<br>
 Oğluşum<br>
 Kedim ❤️
-
 </p>
 
 </div>
@@ -368,17 +259,13 @@ Kedim ❤️
 
 <div class="card">
 
-<h2>
-💗 Sana Söylediğim Lakaplar
-</h2>
+<h2>💗 Sana Söylediğim Lakaplar</h2>
 
 <p>
-
 Aşkım<br>
 Canım<br>
 Hayatım<br>
 Anneciğim ❤️
-
 </p>
 
 </div>
@@ -388,43 +275,19 @@ Anneciğim ❤️
 
 <div class="card">
 
-<h2>
-📸 Fotoğraflarımız
-</h2>
-
+<h2>📸 Fotoğraflarımız</h2>
 
 <div class="gallery">
 
+<img src="IMG-20260803-WA0002.jpg" alt="Fotoğrafımız">
 
-<img
-src="IMG-20260803-WA0002.jpg"
-alt="Fotoğrafımız"
->
+<img src="IMG_20260807_201325.jpg" alt="Fotoğrafımız">
 
+<img src="Screenshot_20260721_133437.jpg" alt="Fotoğrafımız">
 
-<img
-src="IMG_20260807_201325.jpg"
-alt="Fotoğrafımız"
->
+<img src="Screenshot_20260721_133455.jpg" alt="Fotoğrafımız">
 
-
-<img
-src="Screenshot_20260721_133437.jpg"
-alt="Fotoğrafımız"
->
-
-
-<img
-src="Screenshot_20260721_133455.jpg"
-alt="Fotoğrafımız"
->
-
-
-<img
-src="Screenshot_20260721_133500.jpg"
-alt="Fotoğrafımız"
->
-
+<img src="Screenshot_20260721_133500.jpg" alt="Fotoğrafımız">
 
 </div>
 
@@ -435,316 +298,394 @@ alt="Fotoğrafımız"
 
 <div class="card">
 
-
-<h2>
-🌹 Anılarımız
-</h2>
-
+<h2>🌹 Anılarımız</h2>
 
 <input
-
 class="ani-input"
-
 id="aniBaslik"
-
 type="text"
-
 placeholder="Anının başlığı ❤️"
-
 >
-
 
 <textarea
-
 class="ani-text"
-
 id="aniMetin"
-
 placeholder="Buraya anınızı yazın..."
-
 ></textarea>
 
-
 <button
-
 class="add-button"
-
 onclick="aniEkle()"
-
 >
-
 ❤️ Anıyı Ekle
-
 </button>
 
-
-<div id="anilar">
+<div id="anilar"></div>
 
 </div>
 
+
+<!-- SES KAYITLARI -->
+
+<div class="card">
+
+<h2>🎙️ Ses Kayıtlarımız</h2>
+
+<p>
+Buradan doğrudan ses kaydı yapabilirsiniz. ❤️
+</p>
+
+<button
+id="startButton"
+class="record-button"
+onclick="kaydiBaslat()"
+>
+🎙️ Kayda Başla
+</button>
+
+<button
+id="stopButton"
+class="stop-button"
+onclick="kaydiDurdur()"
+style="display:none;"
+>
+⏹️ Kaydı Durdur
+</button>
+
+<div
+id="recordStatus"
+class="record-status"
+>
+Kayıt yapılmıyor
+</div>
+
+<div id="recordings"></div>
 
 </div>
 
 
 <div class="love">
-
 I love you forever ❤️
-
 </div>
-
 
 <div class="footer">
-
 Sadece bizim anılarımızdan oluşan küçük bir dünya. ❤️
-
 </div>
-
 
 </div>
 
 
 <script>
 
-
-/* ANILARI YÜKLE */
+/* =========================
+   ANILAR
+========================= */
 
 function anilariYukle() {
 
-
     const anilar =
-
-    JSON.parse(
-
-        localStorage.getItem(
-            "bizimAnilarimiz"
-        )
-
-    ) || [];
-
+        JSON.parse(
+            localStorage.getItem("bizimAnilarimiz")
+        ) || [];
 
     const alan =
-
-    document.getElementById(
-        "anilar"
-    );
-
+        document.getElementById("anilar");
 
     alan.innerHTML = "";
 
+    anilar.forEach(function(ani, index) {
 
-    anilar.forEach(
+        const kutu =
+            document.createElement("div");
 
-        function(ani, index) {
+        kutu.className = "memory";
 
+        const baslik =
+            document.createElement("h3");
 
-            const kutu =
+        baslik.textContent =
+            "❤️ " + ani.baslik;
 
-            document.createElement(
-                "div"
-            );
+        const metin =
+            document.createElement("p");
 
-
-            kutu.className =
-            "memory";
-
-
-            const baslik =
-
-            document.createElement(
-                "h3"
-            );
-
-
-            baslik.textContent =
-
-            "❤️ " +
-            ani.baslik;
-
-
-            const metin =
-
-            document.createElement(
-                "p"
-            );
-
-
-            metin.textContent =
+        metin.textContent =
             ani.metin;
 
+        const sil =
+            document.createElement("button");
 
-            const sil =
+        sil.className = "delete-button";
 
-            document.createElement(
-                "button"
+        sil.textContent = "🗑️ Anıyı Sil";
+
+        sil.onclick = function() {
+
+            anilar.splice(index, 1);
+
+            localStorage.setItem(
+                "bizimAnilarimiz",
+                JSON.stringify(anilar)
             );
 
+            anilariYukle();
 
-            sil.className =
-            "delete-button";
+        };
 
+        kutu.appendChild(baslik);
+        kutu.appendChild(metin);
+        kutu.appendChild(sil);
 
-            sil.textContent =
-            "🗑️ Anıyı Sil";
+        alan.appendChild(kutu);
 
-
-            sil.onclick =
-
-            function() {
-
-
-                anilar.splice(
-                    index,
-                    1
-                );
-
-
-                localStorage.setItem(
-
-                    "bizimAnilarimiz",
-
-                    JSON.stringify(
-                        anilar
-                    )
-
-                );
-
-
-                anilariYukle();
-
-
-            };
-
-
-            kutu.appendChild(
-                baslik
-            );
-
-
-            kutu.appendChild(
-                metin
-            );
-
-
-            kutu.appendChild(
-                sil
-            );
-
-
-            alan.appendChild(
-                kutu
-            );
-
-
-        }
-
-    );
-
+    });
 }
 
 
-/* YENİ ANI EKLE */
-
 function aniEkle() {
 
-
     const baslik =
-
-    document
-    .getElementById(
-        "aniBaslik"
-    )
-    .value
-    .trim();
-
+        document
+        .getElementById("aniBaslik")
+        .value
+        .trim();
 
     const metin =
+        document
+        .getElementById("aniMetin")
+        .value
+        .trim();
 
-    document
-    .getElementById(
-        "aniMetin"
-    )
-    .value
-    .trim();
-
-
-    if (
-
-        baslik === "" ||
-        metin === ""
-
-    ) {
-
+    if (baslik === "" || metin === "") {
 
         alert(
             "Lütfen başlık ve anınızı yazın ❤️"
         );
 
-
         return;
-
     }
 
-
     const anilar =
-
-    JSON.parse(
-
-        localStorage.getItem(
-            "bizimAnilarimiz"
-        )
-
-    ) || [];
-
+        JSON.parse(
+            localStorage.getItem("bizimAnilarimiz")
+        ) || [];
 
     anilar.push({
-
-        baslik:
-        baslik,
-
-        metin:
-        metin
-
+        baslik: baslik,
+        metin: metin
     });
 
-
     localStorage.setItem(
-
         "bizimAnilarimiz",
-
-        JSON.stringify(
-            anilar
-        )
-
+        JSON.stringify(anilar)
     );
 
+    document.getElementById("aniBaslik").value = "";
 
-    document
-    .getElementById(
-        "aniBaslik"
-    )
-    .value = "";
-
-
-    document
-    .getElementById(
-        "aniMetin"
-    )
-    .value = "";
-
+    document.getElementById("aniMetin").value = "";
 
     anilariYukle();
 
 }
 
 
-/* SAYFA AÇILINCA ANILARI GÖSTER */
-
 anilariYukle();
 
 
+/* =========================
+   SES KAYDI
+========================= */
+
+let mediaRecorder;
+
+let audioChunks = [];
+
+let kayitSirasi = 0;
+
+
+async function kaydiBaslat() {
+
+    try {
+
+        const stream =
+            await navigator.mediaDevices.getUserMedia({
+                audio: true
+            });
+
+        audioChunks = [];
+
+        mediaRecorder =
+            new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable =
+            function(event) {
+
+                if (event.data.size > 0) {
+
+                    audioChunks.push(event.data);
+
+                }
+
+            };
+
+
+        mediaRecorder.onstop =
+            function() {
+
+                const audioBlob =
+                    new Blob(
+                        audioChunks,
+                        { type: "audio/webm" }
+                    );
+
+                const audioURL =
+                    URL.createObjectURL(audioBlob);
+
+                kayitSirasi++;
+
+                const kutu =
+                    document.createElement("div");
+
+                kutu.className =
+                    "audio-item";
+
+
+                const baslik =
+                    document.createElement("p");
+
+                baslik.textContent =
+                    "🎙️ Ses kaydı " +
+                    kayitSirasi;
+
+
+                const audio =
+                    document.createElement("audio");
+
+                audio.controls = true;
+
+                audio.src = audioURL;
+
+
+                const sil =
+                    document.createElement("button");
+
+                sil.className =
+                    "delete-button";
+
+                sil.textContent =
+                    "🗑️ Kaydı Sil";
+
+
+                sil.onclick =
+                    function() {
+
+                        URL.revokeObjectURL(
+                            audioURL
+                        );
+
+                        kutu.remove();
+
+                    };
+
+
+                kutu.appendChild(baslik);
+
+                kutu.appendChild(audio);
+
+                kutu.appendChild(sil);
+
+
+                document
+                .getElementById("recordings")
+                .appendChild(kutu);
+
+            };
+
+
+        mediaRecorder.start();
+
+
+        document
+        .getElementById("startButton")
+        .style.display = "none";
+
+
+        document
+        .getElementById("stopButton")
+        .style.display = "block";
+
+
+        const durum =
+            document.getElementById(
+                "recordStatus"
+            );
+
+        durum.textContent =
+            "🔴 Kayıt yapılıyor...";
+
+
+        durum.classList.add(
+            "recording"
+        );
+
+    }
+
+    catch(error) {
+
+        alert(
+            "Mikrofon kullanılamadı. Tarayıcıdan mikrofon izni vermen gerekiyor."
+        );
+
+    }
+
+}
+
+
+function kaydiDurdur() {
+
+    if (
+        mediaRecorder &&
+        mediaRecorder.state !== "inactive"
+    ) {
+
+        mediaRecorder.stop();
+
+        mediaRecorder.stream
+            .getTracks()
+            .forEach(
+                track => track.stop()
+            );
+
+    }
+
+
+    document
+    .getElementById("startButton")
+    .style.display = "block";
+
+
+    document
+    .getElementById("stopButton")
+    .style.display = "none";
+
+
+    const durum =
+        document.getElementById(
+            "recordStatus"
+        );
+
+
+    durum.textContent =
+        "Kayıt tamamlandı ❤️";
+
+
+    durum.classList.remove(
+        "recording"
+    );
+
+}
+
 </script>
 
-
 </body>
-
 </html>
